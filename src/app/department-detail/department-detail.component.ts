@@ -17,7 +17,7 @@ export class DepartmentDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
-    // let id = parseInt(this.route.snapshot.paramMap.get('id'));
+    // let id = parseInt(this.route.snapshot.paramMap.get('id')); snapshot Aproach
     // this.departmentId = id;
     this.route.paramMap.subscribe((params: ParamMap) => {
       let id = parseInt(params.get('id'));
